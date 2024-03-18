@@ -1,3 +1,11 @@
+baseURL = "/"
+relativeURLs = true
+
+# [deployment]
+#     [[deployment.targets]]
+#         name = "production"
+
+
 languageCode = "ru-ru"
 DefaultContentLanguage = "ru"
 title = "Portfolio"
@@ -13,7 +21,7 @@ enableMissingTranslationPlaceholders = false
 [params]
 
     # Source Code repository section
-    description = "Portfolio with ECMAScript code samples"
+    description = "Portfolio with ECMAScript code samples."
     github_repository = "https://github.com/thingsym/hugo-theme-techdoc"
     version = "1.0.0"
 
@@ -46,7 +54,7 @@ enableMissingTranslationPlaceholders = false
     menu_style = "open-menu" # "open-menu" or "slide-menu" or "" blank is as no sidebar
 
     # Date format
-    dateformat = "" # default "2 Jan 2006"
+    dateformat = "2006-01-02" # default "2 Jan 2006"
     # See the format reference https://gohugo.io/functions/format/#hugo-date-and-time-templating-reference
 
     # path name excluded from documentation menu
@@ -76,15 +84,15 @@ enableMissingTranslationPlaceholders = false
         identifier = 'home'
         pre = "<i class='fa fa-heart'></i>&nbsp;"
 
-    [[menu.main]]
-        name = "Twitter"
-        url = "https://twitter.com/thingsym"
-        weight = 2
-        identifier = 'twitter'
-        pre = "<b>pre!</b> "
-        post = " <b>post!</b>"
-        [menu.main.params]
-          class = 'twitter-menu-item'
+    # [[menu.main]]
+    #     name = "Twitter"
+    #     url = "https://twitter.com/thingsym"
+    #     weight = 2
+    #     identifier = 'twitter'
+    #     pre = "<b>pre!</b> "
+    #     post = " <b>post!</b>"
+    #     [menu.main.params]
+    #       class = 'twitter-menu-item'
 
 # Markup configure section
 # See https://gohugo.io/getting-started/configuration-markup/
@@ -123,3 +131,8 @@ enableMissingTranslationPlaceholders = false
         "tags",
         "categories",
     ]
+
+[minify]
+    disableCSS = true
+    disableHTML = true
+    disableJS = true
