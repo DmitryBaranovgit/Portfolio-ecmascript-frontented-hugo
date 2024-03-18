@@ -1,9 +1,3 @@
-baseURL = "https://DmitryBaranovgit.github.io/portfolio-ecmascript-frontend"https://accounts.google.com/SignOutOptions?hl=ru&continue=https://mail.google.com/mail&service=mail&ec=GBRAFw
-
-#[deployment]
-    #[[deployment.targets]]
-        #name = "production"
-
 languageCode = "ru-ru"
 DefaultContentLanguage = "ru"
 title = "Portfolio"
