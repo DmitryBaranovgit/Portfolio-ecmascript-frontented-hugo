@@ -1,19 +1,19 @@
 ---
-title: "Exercise 04"
-date: 2024-03-17T20:02:15Z
+title: "Exercise 04 - Wheather"
+date: 2024-07-01T16:00:15Z
 draft: false
 weight: 30
 
 scripts:
-    - /js/01/exercise-04.js
+    - /js/01/exercise-04-wheather.js
 ---
 
-## Exercise 04
+## Exercise 04 - Wheather
 
 * Формулировка задачи
 * Моё описание задачи
 * Почему
-* [Ссылка на скрипт](/js/01/exercise-04.js)
+* [Ссылка на скрипт](/js/01/exercise-04-wheather.js)
 
 ---
     <h3>Поиск погоды по городам</h3>
