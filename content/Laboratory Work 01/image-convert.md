@@ -92,7 +92,7 @@ body:
                 'image_invert': 'checked' === formData.get('image_invert')
             };
 
-            fetch('https://functions.yandexcloud.net/d4e2bhushqskq2629412', {
+            fetch('https://functions.yandexcloud.net/d4eira11easbnld53cos', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
