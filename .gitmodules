@@ -1,4 +1,2 @@
-[submodule "themes/hugo-theme-techdoc"]
-	path = themes/node_modules/@filipecarneiro/hugo-bootstrap-theme
-	theme = "hugo-bootstrap-theme"
-	themesdir = "node_modules/@filipecarneiro"
+theme = "hugo-bootstrap-theme"
+themesdir = "node_modules/@filipecarneiro"

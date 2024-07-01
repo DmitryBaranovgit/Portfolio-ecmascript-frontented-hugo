@@ -9,7 +9,8 @@ relativeURLs = true
 languageCode = "ru-ru"
 DefaultContentLanguage = "ru"
 title = "Portfolio"
-theme = "hugo-theme-techdoc"
+theme = "hugo-bootstrap-theme"
+themesdir = "node_modules/@filipecarneiro"
 
 hasCJKLanguage = true
 metaDataFormat = "yaml"
