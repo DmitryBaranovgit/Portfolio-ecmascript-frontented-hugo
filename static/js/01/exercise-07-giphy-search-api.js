@@ -6,7 +6,7 @@ class GiphySearchApiAdapter {
     
     async searchGifs(query) {
         try {
-            const encodedQuery = encodedURIComponent(query);
+            const encodedQuery = encodeURIComponent(query);
             const response = await fetch(`${this.apiUrl}?api_key=${this.apiKey}&q=${encodedQuery}&limit=10`);
             const json = await response.json();
             if ( response.ok ) {
@@ -53,7 +53,7 @@ class GiphySearchApplication {
     
     async handleSearch(event) {
         event.preventDefault();
-        const query = this.searchLine.ariaValueMax.trim();
+        const query = this.searchLine.value.trim();
         if (query.length !== 0) {
             try {
                 const gifs = await this.adapter.searchGifs(query);
@@ -66,6 +66,6 @@ class GiphySearchApplication {
 }
 
 window.addEventListener('load', () => {
-    const API_KEY = '';
+    const API_KEY = 'kgNcsyRzdOe0cbHMHpOqPk58lH4VsZ2A';
     new GiphySearchApplication(API_KEY);
 })

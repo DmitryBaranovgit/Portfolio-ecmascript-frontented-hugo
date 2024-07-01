@@ -4,13 +4,16 @@ class RSSFeed {
     }
 
     async fetchNews() {
-        try: {
+        try {
             const response = await fetch(this.url);
             const rssSerialized = await response.text();
-            const rss = (new window.DOMParser()).parserFromString(rssSerialized, "text/xml")
+            const rss = (new window.DOMParser()).parseFromString(rssSerialized, "text/xml")
 
             const rssFeedTitle = rss.querySelector('channel > title');
-            const rssFeedItems = rss.querySelectorAll('chanel > item');
+            const rssFeedItems = rss.querySelectorAll('channel > item');
+
+            const feedTitle = rss.FeedTitle.childNofes[0].nodeValue;
+            const feedItems = [];
             for (const rssItem of rssFeedItems) {
                 const itemTitle = rssItem.querySelector('title').childNodes[0].nodeValue;
                 const itemLink = rssItem.querySelector('link').childNodes[0].nodeValue;
@@ -24,7 +27,7 @@ class RSSFeed {
                     pubDate: itemPubDate,
                 };
 
-                rssFeedItems.push(item);
+                FeedItems.push(item);
             }
 
             return {
@@ -57,25 +60,25 @@ class NewsBoard {
 
         for (const feedObject of this.feeds) {
             const newsFeed = await feedObject.fetchNews();
-            const trucatedNews = newsFeed.items.slice(0, this.maxNewsCount);
+            const truncatedNews = newsFeed.items.slice(0, this.maxNewsCount);
 
             const column = document.createElement('div');
             column.classList.add('divTableCell');
 
             const title = document.createElement('h5');
-            title.innerTExt = newsFeed.title;
+            title.innerText = newsFeed.title;
             column.appendChild(title);
 
             const list = document.createElement('ul');
             list.classList.add('news-list');
             for (const newsItem of truncatedNews) {
                 const listItem = document.createElement('li');
-                listItem.innerHTML = `${newsItem.pubDAte}<br>${newsItem.title}`;
+                listItem.innerHTML = `${newsItem.pubDate}<br>${newsItem.title}`;
                 list.appendChild(listItem);
             }
             column.appendChild(list);
 
-            container.appendChild?(column);
+            container.appendChild(column);
         }
 
         container.style.display = 'flex';

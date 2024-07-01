@@ -8,7 +8,7 @@ function loadWeather() {
         const latitude = data.results[0].latitude;
         const longitude = data.results[0].longitude;
 
-        const urlWeather = `https://api.open-meteo.com/v1/forecast?latitude=${latitude}&longitude=${longitude}&current=temperature_2m,relative_humidity_2m`
+        const urlWeather = `https://api.open-meteo.com/v1/forecast?latitude=${latitude}&longitude=${longitude}&current=temperature_2m,relative_humidity_2m`;
         fetch(urlWeather).then(
             response => response.json()
         ).then(data => {
