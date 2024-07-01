@@ -16,4 +16,4 @@ images:
     1. [Excersice 01](laboratory-work-01/01)
     2. [Excersice 02](laboratory-work-01/02)
     3. [Excersice 03](laboratory-work-01/03)
-    4. [Excersice 04 - Wheather](laboratory-work-01/04-weather)
+    4. [Excersice 04 - weather](laboratory-work-01/04-weather)
