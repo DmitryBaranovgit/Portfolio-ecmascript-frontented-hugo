@@ -9,10 +9,8 @@ body:
 
 <form id="image-convert-form">
     <input type="file" id="image_file" name="image_file" accept="image/jpeg"><br>
-
     <input type="checkbox" id="image_invert" name="image_invert" value="checked">
     <label for="checkbox">Invert Image!</label><br>
-
     <input type="submit" value="Submit">
 </form>
 
