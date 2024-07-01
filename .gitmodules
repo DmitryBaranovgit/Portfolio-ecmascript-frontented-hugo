@@ -1,2 +1,2 @@
 theme = "hugo-bootstrap-theme"
-themesdir = "node_modules/@filipecarneiro"
+themesdir = "@filipecarneiro"

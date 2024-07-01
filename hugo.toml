@@ -10,7 +10,7 @@ languageCode = "ru-ru"
 DefaultContentLanguage = "ru"
 title = "Portfolio"
 theme = "hugo-bootstrap-theme"
-themesdir = "node_modules/@filipecarneiro"
+themesdir = "@filipecarneiro"
 
 hasCJKLanguage = true
 metaDataFormat = "yaml"
